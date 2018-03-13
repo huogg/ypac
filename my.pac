@@ -1,6 +1,6 @@
 function FindProxyForURL(url, host)
 {
-    //ºÚÃûµ¥ 
+    //ÅŸÃšÄ‚Å±Ä¾Ä½ 
     if (shExpMatch(host, "114.*") ||
         shExpMatch(host, "*.2345.com") ||
         shExpMatch(host, "*.hao123.com") ||
@@ -27,7 +27,7 @@ function FindProxyForURL(url, host)
         shExpMatch(host, "*.7399.com") ||
         shExpMatch(host, "*.2344.com") ||
         shExpMatch(url, "*/ad/*"))    
-        return "PROXY 0.0.0.0:0";
+        return "PROXY 127.0.0.1:80";
     else
         return "DIRECT";
 }
