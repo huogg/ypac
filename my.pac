@@ -1,6 +1,6 @@
 function FindProxyForURL(url, host)
 {
-    //şÚĂűľĽ 
+    //blacklist
     if (shExpMatch(host, "114.*") ||
         shExpMatch(host, "*.2345.com") ||
         shExpMatch(host, "*.hao123.com") ||
